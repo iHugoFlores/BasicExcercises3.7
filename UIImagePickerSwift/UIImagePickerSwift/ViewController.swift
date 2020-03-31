@@ -102,7 +102,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        print("Image callback")
         self.dismiss(animated: true, completion: nil)
         if let pickedImage = info[UIImagePickerController.InfoKey(rawValue: UIImagePickerController.InfoKey.originalImage.rawValue)] as? UIImage {
             if picker == imageBottom {
@@ -113,7 +112,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
         
     }
-
 
 }
 
